@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>Tehnici de simulare</title>
+    <link rel="stylesheet" href="../style.css"/>
+</head>
+<body >
+<header id="header">
+    <div class="headerInner">
+
+        <div class="logoImage">
+            <img class="logo" src="fmi.png" alt="FMI_LOGO">
+        </div>
+
+        <div class="course">
+            <h1>Tehnici de simulare</h1>
+        </div>
+
+        <div class="student">
+            <p class="studentName">donescu ion</p>
+            <p class="studentYear">anul iii - idd - 2020 </p>
+        </div>
+
+    </div>
+</header>
+<main>
+    <h2 id="alghoritmTitle">Variabila exponențiala Exp(3)<br/>- a treia metodă de respingere -</h2>
+
+    <div id="board">
+        <div class="leftSide">
+            <h3>Introduceți numărul de variabile de generat</h3>
+            <input type="text" id="nr_variabile" class="foo">
+            <button type="button" id="buton" class="btn" onclick="getNumber()">Generează variabilele</button>
+            <div id="numere_generate">
+            </div>
+            <button type="button" id="valideaza" class="btn hidden" onclick="valideaza()">Validează</button>
+            <p class="validare" id="media"></p><br/>
+            <p class="validare" id="dispersia"></p>
+        </div>
+
+        <div class="centerSide">
+            <h3>HISTOGRAMA</h3>
+            <canvas id="sketchpad" width="600" height="300"></canvas>
+            <button id = "genereaza" class="btn hidden" onclick="init();"> Generează histograma</button>
+            <button id = "reload" class="btn hidden" onclick="Reia()">Reia</button>
+        </div>
+
+
+        <div class="rightSide">
+            <h3>ABOUT</h3>
+            <div class="about"> Generarea unei variabile exponențiale Y de parametru &#955  (3 în cazul de față) presupune generarea unei
+                variabile exponențiale X de paramentru 1, având loc relația Y = X/&#955.Generarea unei variabile exponențiale constă
+                în numărarea subșirurilor descendente respinse din care face parte o variabilă U acceptată.
+                Validarea generării variabilelor se face cu ajutorul mediei și dispersiei empirice care trebuie să
+                fie apropiate de media și dispersia teoretică. Histograma este generată prin împărțirea în 15 (ales) intervale pe axa X
+                și frecvențele relative (raport dintre frecvențele absolute și numărul total de variabile generate) pe axa Y.
+            </div>
+
+        </div>
+    </div>
+
+</main>
+<button class="btn">
+    <a href="../index.html">Inapoi la pagina pricipala</a>
+</button>
+<script src="app.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+﻿body {
+    margin: auto ;
+    max-width: 1200px;
+
+}
+
+#header {
+    background-color: #c9f2f2;
+    box-shadow: 0px 3px #888888;
+    margin-bottom: 10px;
+    height: 60px;
+    margin-right: 0;
+}
+
+.headerInner {
+    width: 100%;
+    display: inline-flex;
+}
+
+.logoImage {
+    width: 33.33%;
+}
+
+.logo {
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 33.33%;
+}
+
+.course {
+    width: 33.33%;
+    text-align: center;
+}
+
+.course > h1 {
+    margin: 0;
+    padding-top: 15px;
+    font-size: 35px;
+}
+
+.student {
+    padding-top: 0px;
+    padding-right: 5px;
+    color: #2d3c49;
+    width: 33.33%;
+    display: grid;
+    text-align: center;
+}
+
+.studentName {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.studentYear {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+}
+/*end of header style*/
+
+#alghoritmTitle {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#board {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.leftSide {
+    width: 20%;
+    float: right;
+    margin-right: 5px;
+    background-color: lightyellow;
+    padding: 10px;
+    z-index: 1;
+    border-style: groove;
+}
+.leftSide > h3{
+    text-align: center;
+    margin-bottom: 0;
+}
+.nr_variabile{
+    text-align: center;
+}
+.foo{
+    width:193px;
+}
+
+#numere_generate {
+    height: 200px;
+    width: 200px;
+    overflow: auto;
+    border-style:solid;
+}
+.about {
+    height: 450px;
+    width: 220px;
+    overflow: auto;
+    border-style:solid;
+}
+.validare{
+    margin:5px;
+}
+#content {
+    margin:500px;
+    height: 800px;
+    width: 200px;
+
+}
+
+.centerSide {
+    width: 60%;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.centerSide > h3, .centerSide > p {
+    margin: 0;
+}
+.hidden{
+    visibility: hidden;
+}
+#sketchpad {
+    background-color: white;
+    border: 1px solid #888;
+    border-radius: 4px;
+    position: relative;
+}
+.rightSide {
+    width: 20%;
+    float: left;
+    margin-left: 5px;
+    background-color: lightyellow;
+    padding: 10px;
+    z-index: 1;
+    border-style: groove;
+    text-align: center;
+}
+.main_page{
+    display:flex;
+}
+.btn {
+    width: 200px;
+    margin:10px 0;
+}
+.btn_main{
+    margin-top: 200px;
+    width:300px;
+    height: 50px;
+    flex-grow: 1;
+}
+
+
